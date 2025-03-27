@@ -1,0 +1,137 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        background: rgba(0,0,0, 0.5);
+        padding: 10px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    nav > h1 {
+        color: white;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    nav > ul {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    nav > ul > li {
+        list-style: none;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #index-bg {
+        background: url('images/pemandangan-1.png') no-repeat;
+        animation: change-bg 5s infinite alternate ;
+        background-size: cover;
+
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .index-h1 {
+        color: rgb(0, 0, 0);
+    }
+
+    .hobi {
+        margin-top: 120px;
+        font-size: 40px;
+    }
+
+    img {
+        display: flex;
+        border-radius: 50%;
+        margin: auto;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+        border: 3px solid #333;
+        justify-content: center;
+    }
+
+    .isi-profile {
+        border: 4px;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 1;
+        margin-top: 40px;
+    }
+
+    #body-background {
+        background: url('images/background_about1.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .kontak {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .p-kontak {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 150px;
+        line-height: 1.8;
+    }
+
+    #contact-bg {
+        background: rgb(182, 181, 181);
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    nav > ul > li > a {
+        color: white;
+        text-decoration: none;
+    }
+
+    @keyframes change-bg {
+        0% {
+            background: url('images/pemandangan-1.png') no-repeat;
+            background-size: cover;
+        }
+        50% {
+            background: url('images/pemandangan-2.png') no-repeat;
+            background-size: cover;
+        }
+
+        100% {
+            background: url('images/pemandangan-3.png') no-repeat;
+            background-size: cover;
+        }
+    }
+
+    footer {
+        background: rgba(0,0,0, 0.5);
+        padding: 20px;
+        margin-top: auto;
+        text-align: center;
+        color: white
+    }
